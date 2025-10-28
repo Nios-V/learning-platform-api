@@ -25,7 +25,7 @@ public class Category extends Auditable {
     @Column(nullable = true)
     private String description;
 
-    @ManyToMany
+    @ManyToMany(mappedBy = "categories")
     private Set<Course> courses = new HashSet<>();
 
     public Category() {
