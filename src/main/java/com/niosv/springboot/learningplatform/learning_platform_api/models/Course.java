@@ -29,7 +29,7 @@ public class Course extends Auditable {
     @Column(nullable = false, length = 512)
     private String description;
 
-    @Column(nullable = false, columnDefinition = "integer default 0")
+    @Column(nullable = false)
     private Double amount;
 
     @Column(nullable = false)
